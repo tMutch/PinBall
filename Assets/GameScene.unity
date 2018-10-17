@@ -589,7 +589,6 @@ GameObject:
   - component: {fileID: 763183577}
   - component: {fileID: 763183579}
   - component: {fileID: 763183578}
-  - component: {fileID: 763183580}
   m_Layer: 5
   m_Name: ScoreTextGUI
   m_TagString: Untagged
@@ -603,7 +602,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 763183576}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -612,7 +611,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 85, y: 200}
+  m_AnchoredPosition: {x: 150, y: 200}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763183578
@@ -647,24 +646,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 0
 --- !u!222 &763183579
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 763183576}
---- !u!114 &763183580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 763183576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a602dcbd4f8ed8f46ad4c5a30e5ff0db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &800978484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,6 +1270,7 @@ GameObject:
   - component: {fileID: 1622988943}
   - component: {fileID: 1622988942}
   - component: {fileID: 1622988947}
+  - component: {fileID: 1622988948}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1381,6 +1370,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc10f5230fe8f5b4c96b041ed174c436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1622988948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622988941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db87a26a49107b4aa9790b48c4dbc40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreTextGUI: {fileID: 763183578}
 --- !u!1 &1636495303
 GameObject:
   m_ObjectHideFlags: 0
