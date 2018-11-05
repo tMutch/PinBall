@@ -23,10 +23,12 @@ public class ScoreMng : MonoBehaviour {
 			score += 50;
 		} else if (yourTag == "LargeCloudTag") {
 			score += 10;
-		}
-		else {
+		} nelse if (yourTag == "LargeStarTAg"){
 			score += 5;
-	}
+		}
+		else  { 
+			score += 0;			
+		}
 			SetScore();
 		}
 
